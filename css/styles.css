@@ -475,12 +475,14 @@ img {
 }
 
 .modal {
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
 
   height: 581px;
   width: 528px;
+
+  padding: 40px;
 
   background-color: var(--white-color);
   border-radius: 4px;
@@ -520,14 +522,6 @@ img {
   right: 0;
 }
 /* ОФОРМЛЕННЯ МОДАЛЬНОГО ВІКНА*/
-
-.form {
-  /* border: 1px solid tomato; */
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
-}
 
 .form p {
   font-weight: 700;
