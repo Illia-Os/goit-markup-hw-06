@@ -583,6 +583,10 @@ img {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  outline: none;
 }
 
 .item-form .icon {
@@ -644,12 +648,6 @@ img {
   background-origin: border-box;
 }
 
-.item-input {
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  outline: none;
-}
-
 .comment-text {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -699,6 +697,17 @@ img {
   fill: var(--blue-color);
 }
 
+.item-input:hover,
+.item-input:focus {
+  fill: var(--blue-color);
+  border:1px solid var(--blue-color);
+}
+
+.icon-input:hover .icon,
+.icon-input:focus .icon {
+  fill: var(--blue-color);
+}
+
 .item-input:focus-within {
   border: 1px solid var(--blue-color);
 }
@@ -706,6 +715,11 @@ img {
 .comment-text:focus-within {
   border: 1px solid var(--blue-color);
   border-radius: 4px;
+}
+
+.comment-input textarea:hover,
+.comment-input textarea:focus {
+  border:1px solid var(--blue-color)
 }
 
 /* ---------------------------------------------------------------------- */
