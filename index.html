@@ -363,62 +363,54 @@
 
             <div class="item-form">
               <label for="name">Ім'я</label>
-              <div class="icon-input">
-                <span class="icon">
-                  <svg class="modal-icon" width="18" height="18">
-                    <use href="./images/icons.svg#icon-person-black"></use>
-                  </svg>
-                </span>
-                <input
-                  class="item-input"
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder=""
-                  autofocus
-                />
-              </div>
+              <input
+                class="item-input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder=""
+                autofocus
+              />
+                            <span class="icon">
+                <svg class="modal-icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-person-black"></use>
+                </svg>
+              </span>
             </div>
 
             <div class="item-form">
               <label for="tel">Телефон</label>
-              <div class="icon-input">
-                <span class="icon">
-                  <svg class="modal-icon" width="18" height="18">
-                    <use href="./images/icons.svg#icon-phone-black"></use>
-                  </svg>
-                </span>
-                <input class="item-input" type="phone" name="phone" id="phone" placeholder="" />
-              </div>
+              <span class="icon">
+                <svg class="modal-icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-phone-black"></use>
+                </svg>
+              </span>
+              <input class="item-input" type="tel" name="phone" id="tel" placeholder="" />
             </div>
 
             <div class="item-form">
-              <label for="mail">Пошта</label>
-              <div class="icon-input">
-                <span class="icon">
-                  <svg class="modal-icon" width="18" height="18">
-                    <use href="./images/icons.svg#icon-email-black"></use>
-                  </svg>
-                </span>
-                <input class="item-input" type="mail" name="mail" id="mail" placeholder="" />
-              </div>
+              <label for="email">Пошта</label>
+              <span class="icon">
+                <svg class="modal-icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-email-black"></use>
+                </svg>
+              </span>
+              <input class="item-input" type="email" name="email" id="email" placeholder="" />
             </div>
 
-            <div class="item-form">
+            <div class="item-form comment-input">
               <label for="comment">Залиште коментар</label>
-              <div class="comment-input">
-                <textarea
-                  class="comment-text"
-                  name="comment"
-                  id="comment"
-                  rows="5"
-                  placeholder="Коментар..."
-                ></textarea>
-              </div>
+              <textarea
+                class="comment-text"
+                name="comment"
+                id="comment"
+                rows="5"
+                placeholder="Коментар..."
+              ></textarea>
             </div>
 
             <label class="item-form policy-form"
-              >Погоджуюся з розсилкою та приймаю &nbsp<a href=""> Умови договору</a>
+              >Погоджуюся з розсилкою та приймаю &nbsp; <a href=""> Умови договору</a>
               <input class="checkbox" type="checkbox" name="policy" />
               <span class="icon"></span>
             </label>
@@ -509,10 +501,10 @@
             </ul>
           </div>
           <div class="mailing-list">
-            <form action="">
+            <form>
               <p>Підпишіться на розсилку</p>
               <div class="position-subscribe">
-                <input class="item-input" type="mail" name="mail" id="mail" placeholder="E-mail" />
+                <input class="item-input" type="email" name="email" id="mail" placeholder="Email" />
                 <button class="subscribe" type="submit">
                   <span>Підписатися</span>
                   <svg class="icon-send" width="24" height="24">

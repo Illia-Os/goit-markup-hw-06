@@ -475,7 +475,7 @@ img {
 }
 
 .modal {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
 
@@ -493,15 +493,15 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 8px;
+  left: 490px;
   border: 1px solid var(--gray-color);
   height: 30px;
   width: 30px;
   border-radius: 50%;
   padding-top: 6px;
   padding-bottom: 6px;
-  margin-top: 8px;
-  margin-right: 8px;
-  margin-left: 490px;
   cursor: pointer;
   background-color: var(--white-color);
 
@@ -523,7 +523,7 @@ img {
 
 .form {
   /* border: 1px solid tomato; */
-  /* padding-top: 40px; */
+  padding-top: 40px;
   padding-bottom: 40px;
   padding-left: 40px;
   padding-right: 40px;
@@ -550,6 +550,7 @@ img {
 .item-form {
   /* display: flex; */
   position: relative;
+  margin-bottom: 10px;
 
   font-size: 12px;
   line-height: calc(14 / 12);
@@ -557,16 +558,20 @@ img {
   color: var(--gray-color);
 }
 
-.icon-input {
+.item-form .item-input {
   margin-top: 4px;
-  margin-bottom: 10px;
+}
+
+.item-form label {
+  margin-top: 4px;
 }
 
 .comment-input {
-  margin-top: 4px;
+  margin-bottom: 20px;
 }
 
 .comment-input textarea {
+  margin-top: 4px;
   outline: none;
   resize: none;
   height: 135px;
@@ -602,8 +607,10 @@ img {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   text-align: center;
-  margin-top: 20px;
   margin-bottom: 30px;
+
+  height: 9px;
+  position: relative;
 
   display: flex;
   justify-content: center;
@@ -626,14 +633,11 @@ img {
   position: absolute;
 }
 
-.policy-form {
-  height: 9px;
-}
-
 .policy-form .icon {
   position: absolute;
   width: 15px;
   height: 15px;
+  left: 2%;
 
   border-radius: 4px;
   border: 2px solid black;
@@ -693,7 +697,7 @@ img {
   background-color: #0073b5;
 }
 
-.icon-input:focus-within .icon {
+.item-form:focus-within .icon {
   fill: var(--blue-color);
 }
 
@@ -703,8 +707,8 @@ img {
   border:1px solid var(--blue-color);
 }
 
-.icon-input:hover .icon,
-.icon-input:focus .icon {
+.item-form:hover .icon,
+.item-form:focus .icon {
   fill: var(--blue-color);
 }
 
